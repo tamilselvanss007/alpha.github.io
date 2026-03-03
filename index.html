@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamilselvan S | Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Tamilselvan S – Web Developer, AI Engineer &amp; Cyber Warrior. MKCE 2nd Year Engineering Student." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Cursor spotlight effect -->
+    <div id="cursor-spotlight" class="cursor-spotlight"></div>
+    <!-- Floating particles background -->
+    <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header id="navbar" class="navbar" role="banner">
+        <div class="nav-container">
+
+            <a href="#hero" class="nav-logo" aria-label="Home">TS</a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="icon-sun"></i>
+                    <i class="fa-solid fa-moon" id="icon-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+
+                <div class="hero-text reveal-left">
+                    <p class="hero-greeting"><span class="wave-emoji">👋</span> Hello, I'm</p>
+                    <h1 class="hero-name">TAMILSELVAN S</h1>
+                    <div class="hero-typed-wrapper">
+                        <span class="typed-prefix">I'm a&nbsp;</span>
+                        <span id="typed-target" class="typed-text"></span>
+                    </div>
+                    <p class="hero-bio">
+                        I'm a driven 2nd-year CS student at <strong>MKCE</strong> who doesn't just learn — I build,
+                        ship, and solve. I'm ready to bring my skills in
+                        <strong>Web Development, AI &amp; Cybersecurity</strong> to a company where I can
+                        make a real impact, grow fast, and deliver excellence from day one.
+                    </p>
+
+                    <!-- Hero Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Tech Stacks</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Commitment</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Hire Me <i class="fa-solid fa-handshake"></i></a>
+                        <a href="resume.pdf" download class="btn btn-ghost"><i class="fa-solid fa-download"></i>
+                            Resume</a>
+                    </div>
+                    <div class="hero-badges">
+                        <div class="hero-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Open to Opportunities</span>
+                        </div>
+                        <div class="freelance-badge">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Available for Freelance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal-right">
+                    <div class="profile-ring" id="profile-ring">
+                        <div class="profile-frame" id="profile-frame">
+                            <img src="profile.jpg" alt="Tamilselvan S – Web Developer, AI Engineer"
+                                class="profile-photo" id="profile-img"
+                                onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=tamilselvan&backgroundColor=0369a1'" />
+                        </div>
+                        <div class="ring-decoration ring-1" id="ring-1"></div>
+                        <div class="ring-decoration ring-2" id="ring-2"></div>
+                        <div class="profile-glow"></div>
+
+                        <!-- ── Cyber Live Animations ── -->
+                        <!-- Radar sweep -->
+                        <div class="cyber-radar"></div>
+                        <!-- Expanding pulse rings -->
+                        <div class="cyber-pulse cp1"></div>
+                        <div class="cyber-pulse cp2"></div>
+                        <!-- Blinking nodes on ring edge -->
+                        <div class="cyber-node" style="--ca:60deg;  --ci:0"></div>
+                        <div class="cyber-node" style="--ca:180deg; --ci:1"></div>
+                        <div class="cyber-node" style="--ca:300deg; --ci:2"></div>
+                        <!-- Orbiting security icons -->
+                        <div class="orbit-wrap">
+                            <div class="orb-item" style="--n:0">
+                                <div class="orb-badge" style="--oc:#38bdf8"><i
+                                        class="fa-solid fa-shield-halved"></i><span>Security</span></div>
+                            </div>
+                            <div class="orb-item" style="--n:1">
+                                <div class="orb-badge" style="--oc:#10b981"><i
+                                        class="fa-solid fa-lock"></i><span>Encrypted</span></div>
+                            </div>
+                            <div class="orb-item" style="--n:2">
+                                <div class="orb-badge" style="--oc:#f59e0b"><i
+                                        class="fa-solid fa-terminal"></i><span>Terminal</span></div>
+                            </div>
+                            <div class="orb-item" style="--n:3">
+                                <div class="orb-badge" style="--oc:#ef4444"><i class="fa-solid fa-bug"></i><span>Bug
+                                        Hunt</span></div>
+                            </div>
+                            <div class="orb-item" style="--n:4">
+                                <div class="orb-badge" style="--oc:#8b5cf6"><i
+                                        class="fa-solid fa-key"></i><span>Crypto</span></div>
+                            </div>
+                            <div class="orb-item" style="--n:5">
+                                <div class="orb-badge" style="--oc:#f97316"><i
+                                        class="fa-solid fa-microchip"></i><span>AI Core</span></div>
+                            </div>
+                        </div>
+                        <!-- Binary particle cloud -->
+                        <div class="bit-cloud" id="bit-cloud"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll hint -->
+            <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+                <span class="scroll-hint-text">Scroll</span>
+                <i class="fa-solid fa-chevron-down scroll-hint-icon"></i>
+            </a>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-badge reveal-up">About Me</div>
+                <h2 class="section-title reveal-up">Who Am I?</h2>
+                <p class="section-sub reveal-up">A little about my background and what drives me.</p>
+
+                <div class="about-grid">
+
+                    <div class="about-card glass-card reveal-up">
+                        <div class="card-icon-wrap accent-blue">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm <strong>Tamilselvan S</strong> — a 2nd-year CS student at <strong>MKCE</strong> who
+                            treats every project like a real product. I don't wait for opportunities; I create them
+                            by building, breaking, and improving things every single day.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card reveal-up">
+                        <div class="card-icon-wrap accent-teal">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>What I Bring</h3>
+                        <p>
+                            Full-stack development with <strong>React & MERN</strong>, intelligent automation with
+                            <strong>Python & AI</strong>, and secure backends with <strong>PHP & SQL</strong>.
+                            I write clean code, ship fast, and care about results — not just theory.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card reveal-up">
+                        <div class="card-icon-wrap accent-purple">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>My Mission</h3>
+                        <p>
+                            I'm actively seeking an <strong>internship or full-time role</strong> where I can export
+                            my skills into a team that builds real things. I want to contribute from day one,
+                            grow alongside industry experts, and prove that great talent doesn't need years —
+                            it needs the right opportunity.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EXPERIENCE / ACHIEVEMENTS ===================== -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-badge reveal-up">My Journey</div>
+                <h2 class="section-title reveal-up">Experience &amp; Achievements</h2>
+                <p class="section-sub reveal-up">Key milestones that shaped who I am as a developer.</p>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 – Present</span>
+                            <h3>B.E. Computer Science &amp; Engineering</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> M. Kumarasamy College of
+                                Engineering (MKCE)</p>
+                            <p>Pursuing my degree with a focus on AI, full-stack development, and cybersecurity.
+                                Consistently applying classroom concepts to real-world projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024</span>
+                            <h3>Hospital Management System – Full Stack</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-code"></i> PHP · MySQL · RBAC · HTML/CSS</p>
+                            <p>Built an enterprise-grade platform managing patient records, doctor scheduling, billing,
+                                and role-based access — fully deployed and functional.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"><i class="fa-solid fa-robot"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024</span>
+                            <h3>AI-Integrated Library Platform</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-code"></i> Java · SQL · JDBC · AI Chatbot
+                            </p>
+                            <p>Developed a smart library system with an AI-powered book recommendation chatbot, member
+                                management, and borrowing history — a complete product-grade application.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Ongoing</span>
+                            <h3>Cybersecurity &amp; AI Self-Learning</h3>
+                            <p class="timeline-place"><i class="fa-solid fa-microchip"></i> Python · Networking ·
+                                Cryptography · ML</p>
+                            <p>Actively deepening expertise in penetration testing, network security, and machine
+                                learning — bridging the gap between security and intelligent systems.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-badge reveal-up">My Arsenal</div>
+                <h2 class="section-title reveal-up">Skills & Expertise</h2>
+                <p class="section-sub reveal-up">Technologies I work with on a daily basis.</p>
+
+                <div class="skills-grid">
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="92" style="--accent:#3b82f6;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85" style="--accent:#f59e0b;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-solid fa-code"></i> Frontend Dev</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90" style="--accent:#10b981;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-brands fa-react"></i> React &amp; MERN</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80" style="--accent:#00d4ff;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-solid fa-robot"></i> Artificial Intelligence</span>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="75" style="--accent:#8b5cf6;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-pct">78%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="78" style="--accent:#6366f1;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-solid fa-database"></i> SQL</span>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88" style="--accent:#ef4444;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item reveal-up">
+                        <div class="skill-meta">
+                            <span class="skill-name"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="95" style="--accent:#f97316;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-badge reveal-up">Portfolio</div>
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+                <p class="section-sub reveal-up">A selection of real-world applications I've built.</p>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card reveal-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder p1-bg">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                            </div>
+                            <div class="project-overlay-hover">
+                                <a href="#" class="project-link-icon" aria-label="GitHub repo"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Web App</span>
+                            <h3 class="project-title">Library Management System</h3>
+                            <p class="project-desc">
+                                A full-featured library platform for managing books, members, borrowing records, and
+                                admin workflows. Includes authentication, borrowing history, and smart notifications.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span><span>SQL</span><span>JDBC</span><span>Auth</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i>
+                                    GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary">Live Demo <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder p2-bg">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <div class="project-overlay-hover">
+                                <a href="#" class="project-link-icon" aria-label="GitHub repo"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Game / Python</span>
+                            <h3 class="project-title">Hot Potato Game</h3>
+                            <p class="project-desc">
+                                A fun multiplayer logic game built with Python. Players receive and pass a
+                                "hot potato" with a countdown timer — last holder loses. Features a
+                                responsive GUI and smart game-state algorithms.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Tkinter</span><span>Algorithms</span><span>Logic</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i>
+                                    GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary">Live Demo <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder p3-bg">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div class="project-overlay-hover">
+                                <a href="#" class="project-link-icon" aria-label="GitHub repo"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Enterprise Web</span>
+                            <h3 class="project-title">Hospital Management System</h3>
+                            <p class="project-desc">
+                                An enterprise platform for managing patient records, doctor scheduling, billing, and
+                                role-based access control. Built with PHP, MySQL, and a modern responsive UI.
+                            </p>
+                            <div class="project-tech">
+                                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>RBAC</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i>
+                                    GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary">Live Demo <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVICES ===================== -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-badge reveal-up">What I Offer</div>
+                <h2 class="section-title reveal-up">Services</h2>
+                <p class="section-sub reveal-up">Specialized solutions I can deliver — ready to plug into your team.</p>
+                <div class="services-grid">
+                    <div class="service-card reveal-up">
+                        <div class="service-icon" style="--sc:#38bdf8"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Full-Stack Web Dev</h3>
+                        <p>End-to-end web applications using React, Node.js, PHP &amp; SQL — from pixel-perfect UI to
+                            robust backend APIs.</p>
+                        <ul class="service-tags">
+                            <li>React / MERN</li>
+                            <li>PHP &amp; MySQL</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal-up">
+                        <div class="service-icon" style="--sc:#8b5cf6"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI &amp; Automation</h3>
+                        <p>Python-powered intelligent scripts, chatbots, data pipelines, and ML integrations that make
+                            your software smarter.</p>
+                        <ul class="service-tags">
+                            <li>Python / ML</li>
+                            <li>Chatbots</li>
+                            <li>Automation</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal-up">
+                        <div class="service-icon" style="--sc:#10b981"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Security &amp; Hardening</h3>
+                        <p>Securing web apps, identifying vulnerabilities, implementing authentication systems, and
+                            hardening backend infrastructure.</p>
+                        <ul class="service-tags">
+                            <li>Auth Systems</li>
+                            <li>RBAC</li>
+                            <li>Security Audits</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal-up">
+                        <div class="service-icon" style="--sc:#f59e0b"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3>UI/UX Engineering</h3>
+                        <p>Crafting stunning, responsive interfaces with smooth animations, accessibility, and a premium
+                            feel across all devices.</p>
+                        <ul class="service-tags">
+                            <li>HTML / CSS / JS</li>
+                            <li>Animations</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TECH STACK ===================== -->
+        <section id="tech" class="section tech-section">
+            <div class="container">
+                <div class="section-badge reveal-up">Technologies</div>
+                <h2 class="section-title reveal-up">Tech Stack</h2>
+                <p class="section-sub reveal-up">Tools and technologies in my day-to-day toolkit.</p>
+
+                <div class="tech-grid">
+
+                    <div class="tech-card reveal-up" title="Python">
+                        <i class="fa-brands fa-python tech-icon" style="color:#3b82f6;"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="Java">
+                        <i class="fa-brands fa-java tech-icon" style="color:#f59e0b;"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="React">
+                        <i class="fa-brands fa-react tech-icon" style="color:#00d4ff;"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="Node.js">
+                        <i class="fa-brands fa-node-js tech-icon" style="color:#10b981;"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="JavaScript">
+                        <i class="fa-brands fa-js tech-icon" style="color:#f59e0b;"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="HTML5">
+                        <i class="fa-brands fa-html5 tech-icon" style="color:#ef4444;"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="CSS3">
+                        <i class="fa-brands fa-css3-alt tech-icon" style="color:#6366f1;"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="PHP">
+                        <i class="fa-brands fa-php tech-icon" style="color:#8b5cf6;"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="Database / SQL">
+                        <i class="fa-solid fa-database tech-icon" style="color:#f97316;"></i>
+                        <span>SQL/MySQL</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="Git">
+                        <i class="fa-brands fa-git-alt tech-icon" style="color:#ef4444;"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="GitHub">
+                        <i class="fa-brands fa-github tech-icon"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-card reveal-up" title="Artificial Intelligence">
+                        <i class="fa-solid fa-brain tech-icon" style="color:#8b5cf6;"></i>
+                        <span>AI / ML</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA BANNER ===================== -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <div class="cta-banner reveal-up">
+                    <div class="cta-banner-text">
+                        <h2>Ready to build something great together?</h2>
+                        <p>I'm one message away. Let's turn your idea into a product.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg">Let's Talk <i
+                            class="fa-solid fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-badge reveal-up">Get In Touch</div>
+                <h2 class="section-title reveal-up">Contact Me</h2>
+                <p class="section-sub reveal-up">I'm <strong>available for freelance projects</strong> — internships,
+                    short-term gigs, or just a great conversation. Let's build something amazing together!</p>
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-info reveal-left">
+                        <div class="contact-info-card glass-card">
+                            <h3>Let's Connect</h3>
+                            <p>I'm currently <strong>available for freelance work</strong> — web development, AI
+                                integrations, and full-stack projects. Whether you have a question, a project proposal,
+                                or just want to say hello — my inbox is always open!</p>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>tamilselvan@example.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>Tamil Nadu, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <strong>College</strong>
+                                    <p>M. Kumarasamy College of Engineering</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-socials">
+                                <a href="#" class="social-btn" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="social-btn" aria-label="LinkedIn"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="social-btn" aria-label="Twitter / X"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrap reveal-right">
+                        <form id="contact-form" class="contact-form glass-card" novalidate>
+                            <h3>Send a Message</h3>
+
+                            <div class="form-group">
+                                <label for="cf-name">Full Name</label>
+                                <input type="text" id="cf-name" name="name" placeholder="Your full name"
+                                    autocomplete="name" />
+                                <span class="form-error" id="err-name"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cf-email">Email Address</label>
+                                <input type="email" id="cf-email" name="email" placeholder="your@email.com"
+                                    autocomplete="email" />
+                                <span class="form-error" id="err-email"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cf-subject">Subject</label>
+                                <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" />
+                                <span class="form-error" id="err-subject"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cf-message">Message</label>
+                                <textarea id="cf-message" name="message" rows="5"
+                                    placeholder="Write your message here..."></textarea>
+                                <span class="form-error" id="err-message"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-success" id="form-success" aria-live="polite">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Message sent! I'll get back to you shortly.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="footer-brand">TS</div>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-quote-wrap">
+                <blockquote class="footer-quote">
+                    <span id="quote-typed"></span>
+                </blockquote>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tamilselvan S. Designed &amp; Built with <i class="fa-solid fa-heart"
+                        style="color:#ef4444;"></i> from scratch.</p>
+                <a href="#hero" class="back-top" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- CDN Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+
+    <!-- Portfolio Script -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
